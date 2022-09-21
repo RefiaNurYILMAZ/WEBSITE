@@ -1,0 +1,32 @@
+[03-Apr-2021 17:38:41 Europe/Istanbul] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and sifre = ''' at line 1' in /home/dasmutfak/public_html/yeni/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:104
+Stack trace:
+#0 /home/dasmutfak/public_html/yeni/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(104): PDO->query('SELECT * FROM k...')
+#1 /home/dasmutfak/public_html/yeni/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(954): Doctrine\DBAL\Driver\PDOConnection->query('SELECT * FROM k...')
+#2 /home/dasmutfak/public_html/yeni/include/Database.php(76): Doctrine\DBAL\Connection->query('SELECT * FROM k...')
+#3 /home/dasmutfak/public_html/yeni/cms/system/Settings.php(959): Database\Data->tekSorgu('SELECT * FROM k...')
+#4 /home/dasmutfak/public_html/yeni/cms/modules/Index.php(19): cms\Settings->AuthCheck()
+#5 / in /home/dasmutfak/public_html/yeni/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 90
+[26-Nov-2021 10:19:44 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and sifre = ''' at line 1 in /home/demovmd/public_html/gunser/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:104
+Stack trace:
+#0 /home/demovmd/public_html/gunser/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(104): PDO->query('SELECT * FROM k...')
+#1 /home/demovmd/public_html/gunser/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(954): Doctrine\DBAL\Driver\PDOConnection->query('SELECT * FROM k...')
+#2 /home/demovmd/public_html/gunser/include/Database.php(76): Doctrine\DBAL\Connection->query('SELECT * FROM k...')
+#3 /home/demovmd/public_html/gunser/cms/system/Settings.php(1086): Database\Data->tekSorgu('SELECT * FROM k...')
+#4 /home/demovmd/public_html/gunser/cms/modules/Index.php(19): cms\Settings->AuthCheck()
+#5 /home/demovmd/public_html/ in /home/demovmd/public_html/gunser/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 90
+[27-Nov-2021 12:18:21 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and sifre = ''' at line 1 in /home/demovmd/public_html/gunser/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:104
+Stack trace:
+#0 /home/demovmd/public_html/gunser/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(104): PDO->query('SELECT * FROM k...')
+#1 /home/demovmd/public_html/gunser/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(954): Doctrine\DBAL\Driver\PDOConnection->query('SELECT * FROM k...')
+#2 /home/demovmd/public_html/gunser/include/Database.php(76): Doctrine\DBAL\Connection->query('SELECT * FROM k...')
+#3 /home/demovmd/public_html/gunser/cms/system/Settings.php(1086): Database\Data->tekSorgu('SELECT * FROM k...')
+#4 /home/demovmd/public_html/gunser/cms/modules/Index.php(19): cms\Settings->AuthCheck()
+#5 /home/demovmd/public_html/ in /home/demovmd/public_html/gunser/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 90
+[29-Nov-2021 09:29:31 Europe/Istanbul] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and sifre = ''' at line 1 in /home/demovmd/public_html/gunser/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:104
+Stack trace:
+#0 /home/demovmd/public_html/gunser/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(104): PDO->query('SELECT * FROM k...')
+#1 /home/demovmd/public_html/gunser/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(954): Doctrine\DBAL\Driver\PDOConnection->query('SELECT * FROM k...')
+#2 /home/demovmd/public_html/gunser/include/Database.php(76): Doctrine\DBAL\Connection->query('SELECT * FROM k...')
+#3 /home/demovmd/public_html/gunser/cms/system/Settings.php(1086): Database\Data->tekSorgu('SELECT * FROM k...')
+#4 /home/demovmd/public_html/gunser/cms/modules/Index.php(19): cms\Settings->AuthCheck()
+#5 /home/demovmd/public_html/ in /home/demovmd/public_html/gunser/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 90

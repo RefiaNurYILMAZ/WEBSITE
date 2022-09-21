@@ -1,0 +1,67 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L] # <--DON'T KNOW ABOUT THESE FLAGS
+
+
+
+
+RewriteRule ^ajax/(.*)/(.*)$ index.php?page=$1&type=ajax&katurl=$2 [L,NC]
+RewriteRule ^ajax/(.*)$ index.php?page=$1&type=ajax [L,NC]
+
+RewriteRule ^en/(.*)/(.*)-([0-9]+)$ index.php?page=$1&katurl=$2&id=$3&lang=en [L,NC]
+RewriteRule ^en/(.*)$ index.php?page=$1&lang=en  [L,NC]
+RewriteRule ^en/(.*)/(.*)-([0-9]+)/([0-9]+)$ index.php?page=$1&katurl=$2&id=$3&lang=en&sayfa=$4 [L,NC]
+RewriteRule ^en/(.*)/([0-9]+)$ index.php?page=$1&lang=en&sayfa=$2 [L,NC]
+RewriteRule ^en/user/(.*)$ index.php?page=user&type=$1&lang=en [L,NC]
+
+
+
+
+
+RewriteRule ^e-katalog/([0-9]+)$ index.php?page=e-katalog&lang=tr&type=katalog&id=$1 [L]
+RewriteRule ^etiket/(.*)$ index.php?page=etiket&value=$1 [L,NC]
+
+
+
+RewriteRule ^(.*)/(.*)/(.*)$ index.php?page=$1&katurl=$2&urunurl=$3&lang=tr [L,NC]
+RewriteRule ^(.*)/(.*)-([0-9]+)$ index.php?page=$1&katurl=$2&id=$3&lang=tr [L,NC]
+
+
+
+RewriteRule ^(.*)/(.*)-([0-9]+)$ index.php?page=$1&katurl=$2&id=$3&lang=tr [L,NC]
+
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/([0-9]+)$ index.php?page=$1&lang=tr&sayfa=$2 [L]
+RewriteRule ^(.*)/(.*)$ index.php?page=$2&lang=$1 [L]
+RewriteRule ^(.*)$ index.php?page=$1&lang=tr [L]
+RewriteRule ^(.*)/(.*)-([0-9]+)/([0-9]+)$ index.php?page=$1&katurl=$2&id=$3&lang=tr&sayfa=$4 [L,NC]
+RewriteRule ^(.*)/(.*)-([0-9]+)/([0-9]+)$ index.php?page=$1&katurl=$2&id=$3&sayfa=$4 [L,NC]
+
+
+
+ErrorDocument 404 /index.php?page=hata&lang=tr
+
+RewriteRule ^upload/(.*)$ upload/$1 [L]
+
+
+</IfModule>
+
+<IfModule mod_expires.c>
+
+    AddType application/vnd.ms-fontobject .eot
+    AddType application/x-font-ttf .ttf
+    AddType application/x-font-opentype .otf
+    AddType application/x-font-woff .woff
+    AddType application/x-font-woff .woff2
+    AddType image/svg+xml .svg
+
+</IfModule>

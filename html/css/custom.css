@@ -1,0 +1,38 @@
+.site-header.style-3 .logo-header {
+    background-color: #f0f6ff;
+}
+
+.site-header.style-3 .logo-header img {
+    max-width: 200px;
+}
+
+
+.overlay-primary-middle:before, .overlay-white-middle:before, .overlay-gradient-middle:before, .overlay-black-middle:before {
+    opacity: 0.3;
+}
+
+
+.main-slider3 .banner-inner .swiper-slide:after {
+    content: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/main-slider/pic1.png);
+}
+
+
+
+#loading-area.loading-page-3 .loading-inner .loader:nth-of-type(2) {
+    background-color: rgba(0, 0, 0, 0.025);
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-right: 4px solid #000;
+    border-bottom: 4px solid #000;
+}
+#loading-area.loading-page-3 .loading-inner .loader:nth-of-type(2) .circle::before {
+    top: -4px;
+    right: -6px;
+    background: rgb(0, 0, 0);
+    box-shadow: rgb(0, 0, 0) 0px 0px 20px, rgb(0, 0, 0) 0px 0px 40px, rgb(0, 0, 0) 0px 0px 60px, rgb(0, 0, 0) 0px 0px 80px, rgb(0, 0, 0) 0px 0px 100px, rgba(0, 0, 0, 0.1) 0px 0px 0px 5px;
+}

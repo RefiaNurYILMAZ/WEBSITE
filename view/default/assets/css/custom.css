@@ -1,0 +1,173 @@
+.site-header.style-3 .logo-header {
+    background-color: #fff;
+}
+
+.site-header.style-3 .logo-header img {
+    max-width: 200px;
+}
+
+
+.overlay-primary-middle:before, .overlay-white-middle:before, .overlay-gradient-middle:before, .overlay-black-middle:before {
+    opacity: 0.3;
+}
+
+
+.main-slider3 .banner-inner .swiper-slide:after {
+    content: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/main-slider/pic1.png);
+}
+
+
+
+#loading-area.loading-page-3 .loading-inner .loader:nth-of-type(2) {
+    background-color: rgba(0, 0, 0, 0.025);
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-right: 4px solid #000;
+    border-bottom: 4px solid #000;
+}
+#loading-area.loading-page-3 .loading-inner .loader:nth-of-type(2) .circle::before {
+    top: -4px;
+    right: -6px;
+    background: rgb(0, 0, 0);
+    box-shadow: rgb(0, 0, 0) 0px 0px 20px, rgb(0, 0, 0) 0px 0px 40px, rgb(0, 0, 0) 0px 0px 60px, rgb(0, 0, 0) 0px 0px 80px, rgb(0, 0, 0) 0px 0px 100px, rgba(0, 0, 0, 0.1) 0px 0px 0px 5px;
+}
+
+
+
+.icon-bx-wraper.style-3 {
+
+    align-items: center;
+    display: flex;
+}
+
+
+@media only screen and (max-width: 1400px){
+    .site-header.style-3 .logo-header {
+        margin-right: 0px;
+    }
+
+   
+}
+
+
+.dz-bnr-inr h1, .dz-bnr-inr .h1 {
+    font-size: 70px;
+    margin-bottom: 60px;
+    font-size: 47px;
+}
+
+
+
+.play-btn2 {
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 12px;
+}
+
+.dz-bnr-inr.dz-bnr-inr-sm {
+    height: 240px;
+}
+
+
+
+.content-box2.video {
+    padding-bottom: 0;
+    padding: 10px;
+    background-color: white;
+    box-shadow: rgb(4 4 4 / 11%) 0px 1px 21px 0px;
+    border-radius: var(--border-radius-base);
+    transition: all 0.5s ease 0s;
+    position: relative;
+    left: 0;
+}
+
+.service_menu_nav ul li a {
+    width: 100%;
+}
+
+
+h3 .title span{
+    color: #18223f;
+    text-align: center;
+}
+
+
+.item-review li i {
+    color: rgb(241 84 90);
+    font-size: 14px;
+}
+
+
+
+.service_menu_nav ul li a:hover, .service_menu_nav ul li a.active {
+    padding-left: 20px;
+    border-color: transparent;
+    transform: translateX(0px);
+    color: rgb(255, 255, 255);
+    background-color: #ec1c24;
+}
+
+.content-inner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* urun hover */
+/*
+.service_menu_nav ul li:hover a::before, .service_menu_nav ul li.current-menu-item a::before, .service_menu_nav ul li.active a::before 
+{ opacity: 1; right: 10px; color: rgb(255, 255, 255); }
+*/
+
+.widget_categories ul li ul li {
+    text-align: right;
+    display: grid;
+    width: 100%;
+    padding: 0.5rem 0rem 0.5rem 0 !important;
+    line-height: 1.3 !important;
+}
+
+
+
+.widget.style-1 .widget-title {
+    margin-bottom: 0;
+}
+
+.widget_categories ul li ul li {
+    padding-left: 15px !important;
+    margin-left: 15px;
+}
+
+.icon-bx-wraper.style-2 {
+    padding: 12px 30px 17px 55px;
+    margin-left: 40px;
+}
+
+.fa-file-xlsx:before,
+.fa-file-xls:before {
+    content: "\f1c3";
+}
+
+
+.fa-file-doc:before,
+.fa-file-docx:before {
+    content: "\f1c2";
+}
+
+.fa-file-rar:before,
+.fa-file-zip:before {
+    content: "\f1c6";
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25 36 54);
+    border-color: rgb(25 36 54);
+}
