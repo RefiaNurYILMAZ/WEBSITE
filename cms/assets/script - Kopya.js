@@ -21,7 +21,7 @@ $(window).ready(function(e) {
       ,
         'youtube': function(f,url,type,idDil){
              var  ID =   $.videoget.queryString(url);
-             var adresyeni = "https://www.googleapis.com/youtube/v3/videos?id="+ID['v']+"&key=AIzaSyBNpTa1aMjN8Td6PxfkWrr7WMgS8oRjaK0&part=snippet,contentDetails,statistics,status";
+           
              $.getJSON(adresyeni,
                 function(gelen){
                     var imageurl = ((typeof(gelen.items[0].snippet.thumbnails.maxres)!="undefined" && gelen.items[0].snippet.thumbnails.maxres!=="") ? gelen.items[0].snippet.thumbnails.maxres.url:
